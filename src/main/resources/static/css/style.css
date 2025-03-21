@@ -14,38 +14,27 @@ body {
   0% {
     opacity: 1;
   }
-  50% {
+  62% {
+    opacity: 1;
+  }
+  62.1% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 /* 텍스트 깜빡임 효과 */
 .blinking-text {
-    animation: blink 3s infinite; /* 1초 간격으로 무한 반복 */
-    /*border-style: solid;*/
-    /*border-color: #009933;*/
-    /*width: 580px;*/
-    /*height: 140px;*/
-    /*font-size: 60px;*/
-    /*color: #009933;*/
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 580px;
-    height: 140px;
-    margin: -50px 0 0 -280px;
+    animation: blink 1.5s infinite;
+    text-align: center;
     border-style: solid;
-    font-size: 60px;
-    color: #009933;
+    border-color: #009933;
+    padding: 20px 100px 20px 100px;
     font-weight: bold;
-    font-style: normal;
-    font-variant: normal;
-    vertical-align: bottom;
-    text-align: left;
-    align-content: flex-start;
-    align-items: flex-start;
+    font-size: 60px;
+    font-family: Arial, serif;
+    color: #009933;
+    border-width: 5px;
 }
