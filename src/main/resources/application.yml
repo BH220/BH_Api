@@ -1,0 +1,28 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: BH-API
+
+  datasource:
+    url: jdbc:mysql://localhost:3306?serverTimezone=Asia/Seoul
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  devtools:
+    restart:
+      enabled: true
+      poll-interval: 1s  # 1초 간격으로 변경 감지
+
+  thymeleaf:
+    cache: false   # 캐싱 비활성화 (HTML 수정 시 자동 반영)
+    prefix: file:src/main/resources/templates/  # 파일 시스템에서 직접 읽기
+    suffix: .html
